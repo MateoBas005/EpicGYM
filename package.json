@@ -2,7 +2,7 @@
   "name": "epicgym",
   "homepage": "https://MateoBas005.github.io/EpicGYM",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.0", 
   "type": "module",
   "scripts": {
     "dev": "vite",
