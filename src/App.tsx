@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { MapPin, Phone, MessageCircle, Instagram, Youtube, Facebook, ChevronRight, ChevronLeft, Dumbbell, Zap, Users, HeartHandshake } from 'lucide-react';
+import  {useState, useEffect} from 'react';
+import { MapPin, Phone, MessageCircle, ChevronRight,Instagram, Facebook, ChevronLeft, Dumbbell, Zap, Users, HeartHandshake } from 'lucide-react';
 import hefoBg from './assets/image/epiclogo2.jpeg';
 import instalacionesImg from './assets/image/instalacionesepic.jpg';
 import entrenamientoImg from './assets/image/entrenadorepic.jpg';
 import jumpImg from './assets/image/fotoinstalacion.jpeg';
 import comunidadImg from './assets/image/comunidad.webp';
-import video from './assets/image/JUMP.mp4';
+
 
 const App = () => {
   // Datos del gimnasio actualizados para la visualización
@@ -201,6 +201,9 @@ const App = () => {
               <div className="space-y-6">
                 <p className="text-gray-300 text-2xl">{gymData.aboutText}</p>
                 <div className="flex space-x-4 justify-center md:justify-start">
+
+                  /* Esto abria que cambiarlo por sujerencia de los desarolladores esta redactado en el <README className="mb"></README>  */
+                  
                   <a href={gymData.socialMedia.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-300"><Instagram size={28} /></a>
                   <a href={gymData.socialMedia.facebook} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-300"><Facebook size={28} /></a>
                 </div>
