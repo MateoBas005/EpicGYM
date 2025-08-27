@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { MapPin, Phone, MessageCircle, Instagram, Youtube, Facebook, ChevronRight, ChevronLeft, Dumbbell, Zap, Users, HeartHandshake } from 'lucide-react';
+import hefoBg from './assets/image/epiclogo2.jpeg';
+import instalacionesImg from './assets/image/instalacionesepic.jpg';
+import entrenamientoImg from './assets/image/entrenadorepic.jpg';
+import jumpImg from './assets/image/fotoinstalacion.jpeg';
+import comunidadImg from './assets/image/comunidad.webp';
+import video from './assets/image/JUMP.mp4';
 
 const App = () => {
   // Datos del gimnasio actualizados para la visualización
@@ -41,6 +47,7 @@ const App = () => {
   };
 
   // Nuevo contenido para el carrusel de beneficios
+  // Carruse inferior dendoe se muestran los beneficios de ir al gim 
   const benefits = [
     {
       icon: Dumbbell,
@@ -117,9 +124,9 @@ const App = () => {
       {/* Sección principal (Hero) */}
       <main>
         <section className="relative h-screen flex items-center justify-center p-4 text-center overflow-hidden">
-          {/* Imagen de fondo simulada - reemplace con una imagen real */}
-          <div className="absolute inset-0 z-0 bg-cover bg-center" style={{ backgroundImage: "url(https://placehold.co/1920x1080/0d131a/facc15?text=Epic+Gym+-+Tu+entrenamiento)" }}>
-            <div className="absolute inset-0 bg-gray-950 opacity-80"></div>
+          {/* Imagen de fondo parte principal */}
+          <div className="absolute inset-0 z-0 bg-cover bg-center" style={{ backgroundImage: `url(${hefoBg})` }}>
+            <div className="absolute inset-0 bg-gray-95Transforma tu fuerza en resultados0 opacity-80"></div>
           </div>
           <div className="relative z-10 max-w-4xl mx-auto">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight mb-4 animate-fade-in-down">
@@ -192,17 +199,17 @@ const App = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
-                <p className="text-gray-300 text-lg">{gymData.aboutText}</p>
+                <p className="text-gray-300 text-2xl">{gymData.aboutText}</p>
                 <div className="flex space-x-4 justify-center md:justify-start">
                   <a href={gymData.socialMedia.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-300"><Instagram size={28} /></a>
                   <a href={gymData.socialMedia.facebook} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-300"><Facebook size={28} /></a>
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
-                <img src="https://placehold.co/400x300/15202B/facc15?text=Instalaciones+1" alt="Instalaciones del gimnasio" className="rounded-lg shadow-xl object-cover h-full w-full" />
-                <img src="https://placehold.co/400x300/15202B/facc15?text=Entrenamiento" alt="Video de entrenamiento" className="rounded-lg shadow-xl object-cover h-full w-full" />
-                <img src="https://placehold.co/400x300/15202B/facc15?text=Clase+de+JUMP" alt="Clase de JUMP" className="rounded-lg shadow-xl object-cover h-full w-full" />
-                <img src="https://placehold.co/400x300/15202B/facc15?text=Comunidad" alt="Comunidad de Epic Gym" className="rounded-lg shadow-xl object-cover h-full w-full" />
+                <img src={instalacionesImg} alt="Instalaciones del gimnasio" className="rounded-lg shadow-xl object-cover h-full w-full" />
+                <img src={entrenamientoImg} alt="Entrenamiento" className="rounded-lg shadow-xl object-cover h-full w-full" />
+                <img src={jumpImg} alt="Clase de JUMP" className="rounded-lg shadow-xl object-cover h-full w-full" />
+                <img src={comunidadImg} alt="Comunidad de Epic Gym" className="rounded-lg shadow-xl object-cover h-full w-full" />
               </div>
             </div>
           </div>
