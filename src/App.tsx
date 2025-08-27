@@ -202,7 +202,7 @@ const App = () => {
                 <p className="text-gray-300 text-2xl">{gymData.aboutText}</p>
                 <div className="flex space-x-4 justify-center md:justify-start">
 
-                  /* Esto abria que cambiarlo por sujerencia de los desarolladores esta redactado en el <README className="mb"></README>  */
+                  /* Esto abria que cambiarlo por sujerencia de los desarolladores esta redactado en el */
                   
                   <a href={gymData.socialMedia.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-300"><Instagram size={28} /></a>
                   <a href={gymData.socialMedia.facebook} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-300"><Facebook size={28} /></a>
